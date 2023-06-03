@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes of the Storm</title>
+  <link rel="stylesheet" href="w3.css">
+  <style>
+    body {max-width: 1000px; background-color: #000; margin: 10px auto;}
+    td img {height: 100px; width: 100px; transition: 0.2s}
+    td img:hover {transform: scale(1.2); transition: 0.2s;}
+    th img {height: 50px; width: 50px; transform: scale(1.5); transition: 0.2s}
+    th img:hover {transform: scale(1.9); transition: 0.2s;}
+    th {padding: 0px !important; font-size: 1.3em; font-family: Georgia, 'Times New Roman', Times, serif; background-color: #269;}
+    table {margin: 0 auto;}
+    td {height: 122px; width: 122px; padding: 0px; margin: 0px; text-align: center;}
+    b {line-height: 45px;}
+    .dica {
+      position: absolute;
+      left: 100%;
+      top: -16px;
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+      padding-bottom: 10px;
+      width: 180px;
+      z-index: 2;
+      border-radius: 6px;
+      font-family: Verdana; font-size:medium;}
+    .left {left: -100%} /* Obsoleta, criei para que a tooltip ficasse do lado esquerdo quando o hero estivesse no canto direito; agora com a tabela reduzida lateralmente, não fica ruim de ler */
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Tank.jpg" alt="Tank"></th>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/johanna.png"><p class="w3-text dica" id="johanna"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/diablo.png"><p class="w3-text dica" id="diablo"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/muradin.png"><p class="w3-text dica" id="muradin"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/stitches.png"><p class="w3-text dica" id="stitches"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/blaze.png"><p class="w3-text dica" id="blaze"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/etc.png"><p class="w3-text dica" id="etc"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/garrosh.png"><p class="w3-text dica" id="garrosh"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/malganis.png"><p class="w3-text dica" id="malganis"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/tyrael.png"><p class="w3-text dica" id="tyrael"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/varian.png"><p class="w3-text dica" id="varianTaunt"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/anubarak.png"><p class="w3-text dica" id="anubarak"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/arthas.png"><p class="w3-text dica" id="arthas"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/mei.png"><p class="w3-text dica" id="mei"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/cho.png"><p class="w3-text dica" id="cho"></p></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Bruiser.jpg" alt="Bruiser"></th>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/artanis.png"><p class="w3-text dica" id="artanis"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/chen.png"><p class="w3-text dica" id="chen"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/deathwing.png"><p class="w3-text dica" id="deathwing"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/dehaka.png"><p class="w3-text dica" id="dehaka"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/dva.png"><p class="w3-text dica" id="dva"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/gazlowe.png"><p class="w3-text dica" id="gazlowe"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/hogger.png"><p class="w3-text dica" id="hogger"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/imperius.png"><p class="w3-text dica" id="imperius"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/leoric.png"><p class="w3-text dica" id="leoric"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/malthael.png"><p class="w3-text dica" id="malthael"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/ragnaros.png"><p class="w3-text dica" id="ragnaros"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/rexxar.png"><p class="w3-text dica" id="rexxar"></p></td></tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/sonya.png"><p class="w3-text dica" id="sonya"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/thrall.png"><p class="w3-text dica" id="thrall"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/xul.png"><p class="w3-text dica" id="xul"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/yrel.png"><p class="w3-text dica" id="yrel"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/varian.png"><p class="w3-text dica" id="varianTwin"></p></td>
+    </tr>
+  </table>
+  
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Ranged.jpg" alt="Ranged Assassin"></th>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/azmodan.png"><p class="w3-text dica" id="azmodan"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/cassia.png"><p class="w3-text dica" id="cassia"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/chromie.png"><p class="w3-text dica" id="chromie"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/gall.png"><p class="w3-text dica" id="gall"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/falstad.png"><p class="w3-text dica" id="falstad"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/fenix.png"><p class="w3-text dica" id="fenix"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/genji.png"><p class="w3-text dica" id="genji"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/greymane.png"><p class="w3-text dica" id="greymane"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/guldan.png"><p class="w3-text dica" id="guldan"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/hanzo.png"><p class="w3-text dica" id="hanzo"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/jaina.png"><p class="w3-text dica" id="jaina"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/junkrat.png"><p class="w3-text dica" id="junkrat"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/kaelthas.png"><p class="w3-text dica" id="kaelthas"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/kelthuzad.png"><p class="w3-text dica" id="kelthuzad"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/liming.png"><p class="w3-text dica" id="liming"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/lunara.png"><p class="w3-text dica" id="lunara"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/mephisto.png"><p class="w3-text dica" id="mephisto"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/nazeebo.png"><p class="w3-text dica" id="nazeebo"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/nova.png"><p class="w3-text dica" id="nova"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/orphea.png"><p class="w3-text dica" id="orphea"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/probius.png"><p class="w3-text dica" id="probius"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/raynor.png"><p class="w3-text dica" id="raynor"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/sgthammer.png"><p class="w3-text dica" id="sgthammer"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/sylvanas.png"><p class="w3-text dica" id="sylvanas"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/tassadar.png"><p class="w3-text dica" id="tassadar"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/tracer.png"><p class="w3-text dica" id="tracer"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/tychus.png"><p class="w3-text dica" id="tychus"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/valla.png"><p class="w3-text dica" id="valla"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/zagara.png"><p class="w3-text dica" id="zagara"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/zuljin.png"><p class="w3-text dica" id="zuljin"></p></td>
+    </tr>
+  </table>
+
+
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Melee.jpg" alt="Melee Assassin"></th>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/alarak.png"><p class="w3-text dica" id="alarak"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/illidan.png"><p class="w3-text dica" id="illidan"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/kerrigan.png"><p class="w3-text dica" id="kerrigan"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/maiev.png"><p class="w3-text dica" id="maiev"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/samuro.png"><p class="w3-text dica" id="samuro"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/thebutcher.png"><p class="w3-text dica" id="thebutcher"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/valeera.png"><p class="w3-text dica" id="valeera"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/zeratul.png"><p class="w3-text dica" id="zeratul"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/murky.png"><p class="w3-text dica" id="murky"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/qhira.png"><p class="w3-text dica" id="qhira"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/varian.png"><p class="w3-text dica" id="varianColossus"></p></td>
+    </tr>
+  </table>
+
+
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Healer.jpg" alt="Healer"></th>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/alexstrasza.png"><p class="w3-text dica" id="alexstrasza"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/ana.png"><p class="w3-text dica" id="ana"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/anduin.png"><p class="w3-text dica" id="anduin"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/auriel.png"><p class="w3-text dica" id="auriel"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/brightwing.png"><p class="w3-text dica" id="brightwing"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/deckard.png"><p class="w3-text dica" id="deckard"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/kharazim.png"><p class="w3-text dica" id="kharazim"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/lili.png"><p class="w3-text dica" id="lili"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/ltmorales.png"><p class="w3-text dica" id="ltmorales"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/lucio.png"><p class="w3-text dica" id="lucio"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/malfurion.png"><p class="w3-text dica" id="malfurion"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/rehgar.png"><p class="w3-text dica" id="rehgar"></p></td>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/stukov.png"><p class="w3-text dica" id="stukov"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/tyrande.png"><p class="w3-text dica" id="tyrande"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/uther.png"><p class="w3-text dica" id="uther"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/whitemane.png"><p class="w3-text dica" id="whitemane"></p></td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Support.jpg" alt="Support"></th>
+    </tr>
+    <tr>
+      <td class="w3-tooltip"><img src="arquivos/abathur.png"><p class="w3-text dica" id="abathur"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/medivh.png"><p class="w3-text dica" id="medivh"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/thelostvikings.png"><p class="w3-text dica" id="thelostvikings"></p></td>
+      <td class="w3-tooltip"><img src="arquivos/zarya.png"><p class="w3-text dica" id="zarya"></p></td>
+      <td></td>
+      <td></td>
+    </tr>
+    </table>
+
+
+  <table>
+    <tr>
+      <th colspan="6"><img src="arquivos/Stunned.jpg" alt="Stuns" title="Heróis com STUNS ou ROOTS!"></th>
+    </tr>
+    <tr>
+      <td><img src="arquivos/thebutcher.png"></td>
+      <td><img src="arquivos/qhira.png"></td>
+      <td><img src="arquivos/murky.png"></td>
+      <td><img src="arquivos/maiev.png"></td>
+      <td><img src="arquivos/alarak.png"></td>
+      <td><img src="arquivos/kerrigan.png"></td>
+    </tr>
+    <tr>
+      <td><img src="arquivos/valla.png"></td>
+      <td><img src="arquivos/sylvanas.png"></td>
+      <td><img src="arquivos/cassia.png"></td>
+      <td><img src="arquivos/hanzo.png"></td>
+      <td><img src="arquivos/orphea.png"></td>
+      <td><img src="arquivos/kelthuzad.png"></td>
+    </tr>
+    <tr>
+      <td><img src="arquivos/tassadar.png"></td>
+      <td><img src="arquivos/kaelthas.png"></td>
+      <td><img src="arquivos/guldan.png"></td>
+      <td><img src="arquivos/jaina.png"></td>
+      <td><img src="arquivos/zarya.png"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><img src="arquivos/brightwing.png"></td>
+      <td><img src="arquivos/uther.png"></td>
+      <td><img src="arquivos/tyrande.png"></td>
+      <td><img src="arquivos/auriel.png"></td>
+      <td><img src="arquivos/anduin.png"></td>
+      <td><img src="arquivos/deckard.png" alt=""></td>
+    </tr>
+    <tr>
+      <td><img src="arquivos/malfurion.png"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><img src="arquivos/deathwing.png" alt=""></td>
+      <td><img src="arquivos/dehaka.png" alt=""></td>
+      <td><img src="arquivos/gazlowe.png" alt=""></td>
+      <td><img src="arquivos/hogger.png" alt=""></td>
+      <td><img src="arquivos/imperius.png" alt=""></td>
+      <td><img src="arquivos/sonya.png" alt=""></td>
+    </tr>
+    <tr>
+      <td><img src="arquivos/yrel.png" alt=""></td>
+      <td><img src="arquivos/xul.png" alt=""></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <br><br><br><br><br>
+
+<script>
+'use strict'
+document.getElementById('johanna').innerHTML = "<b>Johanna</b><br>3321 213<br><i>D Build (Noob)</i><br><br>1122 322<br><i>E Build (Pro)</i>";
+document.getElementById('diablo').innerHTML = "<b>Diablo</b><br>2122 11¾<br><i>Q Build</i><br><br>2212 22¾<br><i>W Build</i>";
+document.getElementById('muradin').innerHTML = "<b>Muradin</b><br>3221 111<br><i>Generic Build</i>";
+document.getElementById('stitches').innerHTML = "<b>Stitches</b><br>3112 113<br><i>Q Build</i><br><br>1231 114<br><i>D Build</i>";
+document.getElementById('blaze').innerHTML = "<b>Blaze</b><br>1321 311<br><i>Bruiser Build</i>";
+document.getElementById('etc').innerHTML = "<b>ETC</b><br>1322 322<br><i>Bruiser Build</i>";
+document.getElementById('garrosh').innerHTML = "<b>Garrosh</b><br>12½2 112<br><i>Q Build</i>";
+document.getElementById('malganis').innerHTML = "<b>Mal'ganis</b><br>3211 331<br><i>Fighter Build</i>";
+document.getElementById('tyrael').innerHTML = "<b>Tyrael</b><br>3331 ⅔21<br><i>Duelist Build</i>";
+document.getElementById('varianTaunt').innerHTML = "<b>Varian Tank</b><br>1112 114<br><i>Q Build</i><br><br><strike>2132 234<br><i>W Build</i></strike>";
+document.getElementById('anubarak').innerHTML = "<b>Anub'arak</b><br>3321 111<br><i>Assassin Build</i>";
+document.getElementById('arthas').innerHTML = "<b>Arthas</b><br>1232 123<br><i>Tank Build</i>";
+document.getElementById('mei').innerHTML = "<b>Mei</b><br>2322 334<br><i>Standard Build</i>";
+document.getElementById('cho').innerHTML = "<b>Cho</b><br>2111 211<br><i>Cho Build</i>";
+document.getElementById('artanis').innerHTML = "<b>Artanis</b><br>3122 332<br><i>Prism Build</i>";
+document.getElementById('chen').innerHTML = "<b>Chen</b><br>1223 ⅔3<br><i>Auto Attack Build</i>";
+document.getElementById('deathwing').innerHTML = "<b>Deathwing</b><br>31⅓1 111<br><i>Molten Flame Build</i>";
+document.getElementById('dehaka').innerHTML = "<b>Dehaka</b><br>1331 121<br><i>W Build</i><br><br>3111 121<br><i>Pro Build</i><br><br>2221 333<br><i>Solo Build</i>";
+document.getElementById('dva').innerHTML = "<b>D.Va</b><br>1121 ⅔11<br><i>? Build</i>";
+document.getElementById('gazlowe').innerHTML = "<b>Gazlowe</b><br>1222 324<br><i>Xplodium Build</i><br><br>2112 212<br><i>Scrap Build</i>";
+document.getElementById('hogger').innerHTML = "<b>Hogger</b><br><br><i>?</i>";
+document.getElementById('imperius').innerHTML = "<b>Imperius</b><br>2111 121<br><i>Hybrid Build</i>";
+document.getElementById('leoric').innerHTML = "<b>Leoric</b><br>1231 331<br><i>Standard Build</i>";
+document.getElementById('malthael').innerHTML = "<b>Malthael</b><br>1112 412<br><i>? Build</i>";
+document.getElementById('ragnaros').innerHTML = "<b>Ragnaros</b><br>3⅔32 23?<br><i>E Build</i>";
+document.getElementById('rexxar').innerHTML = "<b>Rexxar</b><br><br><i>?</i>";
+document.getElementById('sonya').innerHTML = "<b>Sonya</b><br>3221 231<br><i>Whirlwind Build</i><br><br>1311 311<br><i>Burst Build</i>";
+document.getElementById('thrall').innerHTML = "<b>Thrall</b><br>3331 ⅔21<br><i>Attack Build</i>";
+document.getElementById('varianTwin').innerHTML = "<b>Varian Bruiser</b><br>3331 ⅔21<br><i>Twin Blades Build</i>";
+document.getElementById('xul').innerHTML = "<b>Xul</b><br>3211 221<br><i>W Build<br>(anti-melee)</i>";
+document.getElementById('yrel').innerHTML = "<b>Yrel</b><br>2311 114<br><i>? Build</i>";
+document.getElementById('abathur').innerHTML = "<b>Abathur</b><br>1222 113<br><i>Standard Build</i>";
+document.getElementById('zarya').innerHTML = "<b>Zarya</b><br>2311 211<br><i>Standard Build</i>";
+document.getElementById('medivh').innerHTML = "<b>Medivh</b><br><br><i>?</i>";
+document.getElementById('alexstrasza').innerHTML = "<b>Alexstrasza</b><br>3232 133<br><i>Q Build</i>";
+document.getElementById('uther').innerHTML = "<b>Uther</b><br>3212 212<br><i>Stun Build</i>";
+document.getElementById('rehgar').innerHTML = "<b>Rehgar</b><br>2111 121<br><i>Totem Build</i>";
+document.getElementById('kharazim').innerHTML = "<b>Kharazim</b><br>2132 ⅔22<br><i>Assassin Build</i>";
+document.getElementById('stukov').innerHTML = "<b>Stukov</b><br>3122 112<br><i>E Build (generic)</i><br><br>3222 122<br><i>E Build (physical armor)</i>";
+document.getElementById('deckard').innerHTML = "<b>Deckard</b><br>3121 121<br><i>Support Build</i>";
+document.getElementById('murky').innerHTML = "<b>Murky</b><br>3222 123<br><i>W Build</i>";
+document.getElementById('samuro').innerHTML = "<b>Samuro</b><br>3211 323<br><i>Q Build</i>";
+document.getElementById('thebutcher').innerHTML = "<b>The Butcher</b><br>31⅔2 32⅔<br><i>Standard Build</i>";
+document.getElementById('varianColossus').innerHTML = "<b>Varian</b><br>3221 232<br><i>Assassin Build</i>";
+document.getElementById('azmodan').innerHTML = "<b>Azmodan</b><br>1231 224<br><i>Greed Build</i><br><br>2212 113<br><i>Gluttony Build</i>";
+document.getElementById('fenix').innerHTML = "<b>Fenix</b><br>3122 ?11<br><i>Basic Attack Build</i>";
+document.getElementById('genji').innerHTML = "<b>Genji</b><br>2111 114<br><i>Hybrid Build</i>";
+document.getElementById('kelthuzad').innerHTML = "<b>Kel'Thuzad</b><br>3222 233<br><i>Combo Build</i>";
+document.getElementById('nazeebo').innerHTML = "<b>Nazeebo</b><br>1112 2312<br><i>Spiders Build</i><br><br>322½ 323<br><i>Late Game Build</i>";
+document.getElementById('raynor').innerHTML = "<b>Raynor</b><br>1122 322<br><i>W Build</i><br><br>1112 3222 112<br><i>Q Build</i>";
+document.getElementById('sgthammer').innerHTML = "<b>Sgt. Hammer</b><br>2321 314<br><i>Basic Attack Build</i>";
+document.getElementById('tassadar').innerHTML = "<b>Tassadar</b><br>1112 222<br><i>Q Build</i>";
+document.getElementById('tychus').innerHTML = "<b>Tychus</b><br>3132 232<br><i>Minigun Build</i><br><br>1311 ⅔21<br><i>Grenade Build</i>";
+document.getElementById('zuljin').innerHTML = "<b>Zul'jin</b><br>2331 231<br><i>Basic Attack Build</i><br><br>⅔122 123<br><i>Twin Cleave Build</i>";
+document.getElementById('valla').innerHTML = "<b>Valla</b><br>2131 321<br><i>W + R Build</i><br><br>1322 ⅔33<br><i>Arrow Build</i><br><br>3232 ⅔34<br><i>Basic Attack Build</i>";
+document.getElementById('guldan').innerHTML = "<b>Gul'dan</b><br>2121 23⅓<br><i>Drain Life Build</i><br><br>3⅔31 ?2⅓<br><i>Corruption Build</i>";
+document.getElementById('jaina').innerHTML = "<b>Jaina</b><br>3232 112<br><i>W Build</i><br><br>3222 232<br><i>E Build</i>";
+document.getElementById('cassia').innerHTML = "<b>Cassia</b><br>131½ 22½<br><i>Q Build</i><br><br>211½ 12½<br><i>E Build</i><br><br>322½ 333<br><i>Basic Attack Build</i>";
+document.getElementById('junkrat').innerHTML = "<b>Junkrat</b><br>2132 113<br><i>Q Build</i>";
+document.getElementById('kaelthas').innerHTML = "<b>Kael'thas</b><br>3122 324<br><i>W Build</i>";
+document.getElementById('tracer').innerHTML = "<b>Tracer</b><br>3111 233<br><i>Basic Attack Build</i>";
+document.getElementById('nova').innerHTML = "<b>Nova</b><br>3131 333<br><i>Decoy Build</i>";
+document.getElementById('zeratul').innerHTML = "<b>Zeratul</b><br>3331 211<br><i>Basic Attack Build</i>";
+document.getElementById('mephisto').innerHTML = "<b>Mephisto</b><br>2231 223<br><i>W Build</i>";
+document.getElementById('thelostvikings').innerHTML = "<b>The Lost Vikings</b><br><br><i>?</i>";
+document.getElementById('zeratu').innerHTML = "<b>Zeratul</b><br>1111 111<br><i>Attack Build</i>";
+
+
+</script>
+</body>
+</html>
+<!-- Imagens retiradas de Heroes Profile  -->
